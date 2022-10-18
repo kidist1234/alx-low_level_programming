@@ -1,4 +1,4 @@
-#include "putcharputchar.h"
+#include "main.h"
 /**
  * main - Entry point
  *
