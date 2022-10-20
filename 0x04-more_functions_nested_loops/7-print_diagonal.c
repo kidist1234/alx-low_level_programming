@@ -8,11 +8,21 @@
  */
 void print_diagonal(int n)
 {
-int ch;
-for (ch = 1; ch <= n; ch++)
+int ch, c;
+if (n <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (ch = 0; ch < n; ch++)
+{
+for (c = 0; c < n; c++)
 {
 _putchar(32);
 }
 _putchar(92);
 _putchar('\n');
+}
+}
 }
