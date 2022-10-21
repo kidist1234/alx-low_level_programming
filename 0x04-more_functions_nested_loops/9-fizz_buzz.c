@@ -9,26 +9,26 @@
  */
 int main(void)
 {
-int n;
-for (n = 1; n <= 100; n++)
+int x;
+for (x = 1; x <= 100; x++)
 {
-if ((n % 3) == 0)
+if ((x % 3 == 0) && (x % 5 == 0))
+{
+printf("FizzBuzz"
+}
+else if (x % 3 == 0)
 {
 printf("Fizz");
 }
-else if ((n % 5) == 0)
+else if (x % 5 == 0)
 {
 printf("Buzz");
 }
-else if (((n % 3) == 0) && ((n % 5) == 0))
-{
-printf("FizzBuzz");
-}
 else
 {
-printf("%d", n);
+printf("%d", x);
 }
-if (n != 100)
+if (x != 100)
 {
 printf(" ");
 }
