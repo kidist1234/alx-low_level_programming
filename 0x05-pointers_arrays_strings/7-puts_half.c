@@ -1,32 +1,33 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * puts_half - Entry point
- *
- * Description: 'the program's description'
- * @str: character
- *
- * Return: Always 0 (Success)
- */
+  * puts_half - Prints string
+  * @str: The string to print
+  *
+  * Return: void
+  */
 void puts_half(char *str)
 {
-int len = 0;
-int j;
-while (str[len] != '\0')
+int j = 0;
+int c;
+
+while (str[j] != '\0')
 {
-len++;
+j++;
 }
-if (len % 2 == 1)
+
+if (j % 2 == 1)
 {
-j = (len - 1) / 2;
-j += 1;
-}
+c = (j - 1) / 2;
+c += 1;
+{
 else
 {
-j = len / 2;
+c = j / 2;
 }
-for (; j < len; j++)
+for (; c < j; c++)
 {
-_putchar(str[len]);
+_putchar(str[c]);
 }
 _putchar('\n');
 }
