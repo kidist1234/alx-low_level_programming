@@ -12,6 +12,8 @@ while (h)
 {
 if (h->n)
 printf("%d \n", h->n);
+else
+printf("(nil)\n");
 h = h->next;
 i++;
 }
