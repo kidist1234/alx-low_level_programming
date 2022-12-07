@@ -12,11 +12,10 @@ int fd;
 int i = 0;
 if (!filename)
 return (-1);
-fd = open(filename, O_RDWR);
-if (fd < 0)
-{
 fd = open(filename, O_CREAT | O_RDWR, 0600);
-}
+if (fd < 0)
+return (-1);
+
 while (text_content[i] != '\0')
 i++;
 write(fd, text_content, i);
